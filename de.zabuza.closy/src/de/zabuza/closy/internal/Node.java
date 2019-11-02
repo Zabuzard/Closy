@@ -34,7 +34,7 @@ final class Node<E> implements Comparable<Node<E>> {
 	/**
 	 * Creates a new node with a given parent and element.
 	 *
-	 * @param parent  The parent of the node, <tt>null</tt> indicates a root node
+	 * @param parent  The parent of the node, {@code null} indicates a root node
 	 * @param element The element to wrap around
 	 */
 	Node(final Node<E> parent, final E element) {
@@ -123,7 +123,7 @@ final class Node<E> implements Comparable<Node<E>> {
 	/**
 	 * Gets the parent of the node.
 	 *
-	 * @return The parent of the node, <tt>null</tt> indicates a root node
+	 * @return The parent of the node, {@code null} indicates a root node
 	 */
 	Node<E> getParent() {
 		return parent;
@@ -160,7 +160,7 @@ final class Node<E> implements Comparable<Node<E>> {
 	/**
 	 * Sets the parent of this node.
 	 *
-	 * @param parent The parent to set, <tt>null</tt> indicates a root node
+	 * @param parent The parent to set, {@code null} indicates a root node
 	 */
 	void setParent(final Node<E> parent) {
 		this.parent = parent;

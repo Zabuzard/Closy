@@ -14,7 +14,7 @@ import java.util.stream.Collectors;
  * The implementation is based on the paper:
  * <ul>
  * <li><a href="https://dl.acm.org/citation.cfm?id=1143857">Cover Trees for
- * Nearest Neighbor</a> - Beygelzimer et al. in <tt>ICML '06</tt></li>
+ * Nearest Neighbor</a> - Beygelzimer et al. in {@code ICML '06}</li>
  * </ul>
  * Modified version from
  * <a href="https://github.com/loehndorf/covertree">GitHub: Loehndorf -
@@ -98,7 +98,7 @@ public final class CoverTree<E> implements NearestNeighborComputation<E> {
 	private Node<E> rootNode;
 
 	/**
-	 * Create an initially empty cover tree at level <tt>0</tt> which
+	 * Create an initially empty cover tree at level {@code 0} which
 	 * automatically expands above and below.
 	 *
 	 * @param base   The base of the tree
@@ -134,7 +134,7 @@ public final class CoverTree<E> implements NearestNeighborComputation<E> {
 	}
 
 	/**
-	 * Create an initially empty cover tree at level <tt>0</tt> which
+	 * Create an initially empty cover tree at level {@code 0} which
 	 * automatically expands above and below.
 	 *
 	 * @param metric The metric to use for determining distance between elements
@@ -145,7 +145,7 @@ public final class CoverTree<E> implements NearestNeighborComputation<E> {
 
 	/**
 	 * Get the cover of the given level. All points at this level are guaranteed
-	 * to be <tt>2^level</tt> apart from one another.
+	 * to be {@code 2^level} apart from one another.
 	 *
 	 * @param level The level to get the cover of
 	 *
@@ -173,7 +173,7 @@ public final class CoverTree<E> implements NearestNeighborComputation<E> {
 	}
 
 	/**
-	 * Gets at least <tt>numCenters</tt> centers which are maximally apart from
+	 * Gets at least {@code numCenters} centers which are maximally apart from
 	 * each other. All remaining centers are removed from the tree.<br>
 	 * <br>
 	 * This function only works as designed when the function
@@ -183,7 +183,7 @@ public final class CoverTree<E> implements NearestNeighborComputation<E> {
 	 *
 	 * @param numCenters The number of centers to get
 	 *
-	 * @return At least <tt>numCenters</tt> centers which are maximally apart from
+	 * @return At least {@code numCenters} centers which are maximally apart from
 	 * each other
 	 */
 	@SuppressWarnings("unused")
@@ -517,8 +517,8 @@ public final class CoverTree<E> implements NearestNeighborComputation<E> {
 	/**
 	 * Insert the given element into the tree.<br>
 	 * <br>
-	 * If the tree size is greater than <tt>level</tt> the lowest cover will be
-	 * removed as long as it does not decrease tree size below <tt>level</tt>.
+	 * If the tree size is greater than {@code level} the lowest cover will be
+	 * removed as long as it does not decrease tree size below {@code level}.
 	 *
 	 * @param element The element to insert
 	 * @param level   The level
@@ -569,8 +569,8 @@ public final class CoverTree<E> implements NearestNeighborComputation<E> {
 	 * @param first  The first element
 	 * @param second The second element
 	 *
-	 * @return <tt>True</tt> if both elements are at different locations,
-	 * <tt>false</tt> otherwise
+	 * @return {@code True} if both elements are at different locations,
+	 * {@code false} otherwise
 	 */
 	private boolean areAtDifferentLocations(final E first, final E second) {
 		return metric.distance(first, second) != 0.0;
@@ -583,8 +583,8 @@ public final class CoverTree<E> implements NearestNeighborComputation<E> {
 	 * @param first  The node containing the first element
 	 * @param second The node containing the first element
 	 *
-	 * @return <tt>True</tt> if both elements are at different locations,
-	 * <tt>false</tt> otherwise
+	 * @return {@code True} if both elements are at different locations,
+	 * {@code false} otherwise
 	 */
 	private boolean areAtDifferentLocations(final Node<? extends E> first, final Node<? extends E> second) {
 		return areAtDifferentLocations(first.getElement(), second.getElement());
@@ -691,7 +691,7 @@ public final class CoverTree<E> implements NearestNeighborComputation<E> {
 	}
 
 	/**
-	 * Removes all but <tt>numCenters</tt> elements.
+	 * Removes all but {@code numCenters} elements.
 	 *
 	 * @param numCenters The amount of elements to keep
 	 *

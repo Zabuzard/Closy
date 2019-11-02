@@ -12,14 +12,14 @@ import java.util.Optional;
  */
 public interface NearestNeighborComputation<E> {
 	/**
-	 * Gets the <tt>k</tt> neighbors nearest to the given point. That are the
-	 * <tt>k</tt> elements closest to the given point.
+	 * Gets the {@code k} neighbors nearest to the given point. That are the
+	 * {@code k} elements closest to the given point.
 	 *
 	 * @param point The point in question
-	 * @param k     The amount of neighbors to get, a value of <tt>0</tt> yields
+	 * @param k     The amount of neighbors to get, a value of {@code 0} yields
 	 *              an empty result
 	 *
-	 * @return The <tt>k</tt> neighbors nearest to the given point, ascending in
+	 * @return The {@code k} neighbors nearest to the given point, ascending in
 	 * distance to the point
 	 */
 	@SuppressWarnings("unused")
@@ -31,7 +31,7 @@ public interface NearestNeighborComputation<E> {
 	 *
 	 * @param point The point in question
 	 *
-	 * @return The neighbor nearest to the given point or <tt>empty</tt> if there
+	 * @return The neighbor nearest to the given point or {@code empty} if there
 	 * is no
 	 */
 	@SuppressWarnings("unused")
