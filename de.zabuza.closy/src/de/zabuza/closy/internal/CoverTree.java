@@ -242,7 +242,7 @@ public final class CoverTree<E> implements NearestNeighborComputation<E> {
 				// Create a set of nearest neighbor candidates
 				final double greatestMinDist = Objects.requireNonNull(minDistances.peek());
 				for (final Node<E> nextCandidate : nextCandidates) {
-					if (nextCandidate.getDistance() < greatestMinDist + Math.pow(base, level)) {
+					if (nextCandidate.getDistance() <= greatestMinDist + Math.pow(base, level)) {
 						candidates.add(nextCandidate);
 					}
 				}
@@ -292,7 +292,7 @@ public final class CoverTree<E> implements NearestNeighborComputation<E> {
 
 				// Create a set of nearest neighbor candidates
 				for (final Node<E> nextCandidate : nextCandidates) {
-					if (nextCandidate.getDistance() < minDist + Math.pow(base, level)) {
+					if (nextCandidate.getDistance() <= minDist + Math.pow(base, level)) {
 						candidates.add(nextCandidate);
 					}
 				}
@@ -338,7 +338,7 @@ public final class CoverTree<E> implements NearestNeighborComputation<E> {
 
 				// Create a set of nearest neighbor candidates
 				for (final Node<E> nextCandidate : nextCandidates) {
-					if (nextCandidate.getDistance() < range + Math.pow(base, level)) {
+					if (nextCandidate.getDistance() <= range + Math.pow(base, level)) {
 						candidates.add(nextCandidate);
 					}
 				}
@@ -399,7 +399,7 @@ public final class CoverTree<E> implements NearestNeighborComputation<E> {
 							child.setDistance(node.getDistance());
 						}
 
-						if (child.getDistance() < Math.pow(base, level)) {
+						if (child.getDistance() <= Math.pow(base, level)) {
 							candidates.add(child);
 							parentFound = false;
 						}
@@ -414,7 +414,7 @@ public final class CoverTree<E> implements NearestNeighborComputation<E> {
 
 				// Select one node of the cover-set as the parent of the node
 				for (final Node<E> node : coverset) {
-					if (node.getDistance() < Math.pow(base, level)) {
+					if (node.getDistance() <= Math.pow(base, level)) {
 						parent = node;
 						parentLevel = level;
 						break;

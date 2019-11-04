@@ -43,20 +43,6 @@ final class Node<E> implements Comparable<Node<E>> {
 		children = new ArrayList<>();
 	}
 
-	@Override
-	public boolean equals(final Object obj) {
-		if (this == obj) {
-			return true;
-		}
-		if (obj == null || getClass() != obj.getClass()) {
-			return false;
-		}
-		final Node<?> node = (Node<?>) obj;
-		//noinspection ChainedMethodCall
-		return Double.compare(node.getDistance(), getDistance()) == 0 && getChildren().equals(node.getChildren())
-				&& Objects.equals(getElement(), node.getElement()) && Objects.equals(getParent(), node.getParent());
-	}
-
 	/**
 	 * Compares nodes ascending based on their distance.
 	 */
@@ -67,14 +53,27 @@ final class Node<E> implements Comparable<Node<E>> {
 	}
 
 	@Override
+	public boolean equals(final Object obj) {
+		if (this == obj) {
+			return true;
+		}
+		if (obj == null || getClass() != obj.getClass()) {
+			return false;
+		}
+		final Node<?> node = (Node<?>) obj;
+		return Double.compare(node.getDistance(), getDistance()) == 0 && Objects.equals(getElement(),
+				node.getElement());
+	}
+
+	@Override
 	public int hashCode() {
-		return Objects.hash(getChildren(), getDistance(), getElement(), getParent());
+		return Objects.hash(getDistance(), getElement());
 	}
 
 	@Override
 	public String toString() {
-		return "Node{" + "children=" + children + ", distance=" + distance + ", element=" + element + ", parent="
-				+ parent + '}';
+		return "Node{" + "children size=" + children.size() + ", distance=" + distance + ", element=" + element
+				+ ", has parent=" + (parent != null) + '}';
 	}
 
 	/**
