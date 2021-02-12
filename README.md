@@ -22,7 +22,7 @@ Maven:
 <dependency>
    <groupId>io.github.zabuzard.closy</groupId>
    <artifactId>closy</artifactId>
-   <version>1.2</version>
+   <version>1.2.1</version>
 </dependency>
 ```
 
