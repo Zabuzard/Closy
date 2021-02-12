@@ -1,4 +1,4 @@
-# Closy
+# Closy [![license](https://img.shields.io/github/license/Zabuzard/Closy)](https://img.shields.io/github/license/Zabuzard/Closy) [![maven-central](https://img.shields.io/maven-central/v/io.github.zabuzard.closy/closy)](https://img.shields.io/maven-central/v/io.github.zabuzard.closy/closy) [![javadoc](https://javadoc.io/badge2/io.github.zabuzard.closy/closy/javadoc.svg)](https://javadoc.io/doc/io.github.zabuzard.closy/closy) [![Java](https://img.shields.io/badge/Java-9%2B-ff696c)](https://img.shields.io/badge/Java-9%2B-ff696c)
 
 Closy is a simple library for efficient **nearest neighbor computations**. It is designed generic and can be used
 with **any class** that defines a [metric](https://en.wikipedia.org/wiki/Metric_(mathematics)).
@@ -30,7 +30,7 @@ Jar downloads are available from the [release section](https://github.com/Zabuza
 
 # Documentation
 
-* **API Javadoc**: Available from the [release section](https://github.com/ZabuzaW/Closy/releases)
+* [API Javadoc](https://javadoc.io/doc/io.github.zabuzard.closy/closy) or alternatively from the [release section](https://github.com/ZabuzaW/Closy/releases)
 
 # Getting started
 
