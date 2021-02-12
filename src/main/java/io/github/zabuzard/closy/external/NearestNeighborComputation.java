@@ -1,4 +1,4 @@
-package org.zabuzard.closy.external;
+package io.github.zabuzard.closy.external;
 
 import java.util.Collection;
 import java.util.Optional;

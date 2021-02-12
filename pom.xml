@@ -4,9 +4,37 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.zabuzard.closy</groupId>
+    <groupId>io.github.zabuzard.closy</groupId>
     <artifactId>closy</artifactId>
-    <version>1.1</version>
+    <version>1.2</version>
+    <packaging>jar</packaging>
+
+    <name>Closy</name>
+    <description>Closy is a library that provides fast and generic solutions for nearest neighbor search (NNS)
+    </description>
+    <url>https://github.com/Zabuzard/Closy</url>
+
+    <licenses>
+        <license>
+            <name>GNU General Public License v3.0</name>
+            <url>https://www.gnu.org/licenses/gpl-3.0.en.html</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>Daniel Tischner</name>
+            <email>zabuza.dev@gmail.com</email>
+            <organization>GitHub/Zabuzard</organization>
+            <organizationUrl>https://github.com/Zabuzard</organizationUrl>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:git://github.com/Zabuzard/Closy.git</connection>
+        <developerConnection>scm:git:ssh://github.com:Zabuzard/Closy.git</developerConnection>
+        <url>http://github.com/Zabuzard/Closy/tree/master</url>
+    </scm>
 
     <properties>
         <maven.compiler.source>9</maven.compiler.source>

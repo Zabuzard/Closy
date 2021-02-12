@@ -1,7 +1,7 @@
-package org.zabuzard.closy.internal;
+package io.github.zabuzard.closy.internal;
 
-import org.zabuzard.closy.external.Metric;
-import org.zabuzard.closy.external.NearestNeighborComputation;
+import io.github.zabuzard.closy.external.Metric;
+import io.github.zabuzard.closy.external.NearestNeighborComputation;
 
 import java.util.*;
 import java.util.stream.Collectors;

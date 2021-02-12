@@ -1,6 +1,6 @@
-package org.zabuzard.closy.external;
+package io.github.zabuzard.closy.external;
 
-import org.zabuzard.closy.internal.CoverTree;
+import io.github.zabuzard.closy.internal.CoverTree;
 
 /**
  * Provides utility methods for nearest neighbor computations.

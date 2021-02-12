@@ -1,4 +1,4 @@
-package org.zabuzard.closy.external;
+package io.github.zabuzard.closy.external;
 
 /**
  * Interface for a metric defined on a given type of objects.
