@@ -1,4 +1,4 @@
-package de.zabuza.closy.external;
+package org.zabuzard.closy.external;
 
 /**
  * Interface for a metric defined on a given type of objects.

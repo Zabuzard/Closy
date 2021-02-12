@@ -1,4 +1,4 @@
-package de.zabuza.closy.internal;
+package org.zabuzard.closy.internal;
 
 import java.util.ArrayList;
 import java.util.Collections;

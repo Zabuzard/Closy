@@ -1,7 +1,7 @@
-package de.zabuza.closy.internal;
+package org.zabuzard.closy.internal;
 
-import de.zabuza.closy.external.Metric;
-import de.zabuza.closy.external.NearestNeighborComputation;
+import org.zabuzard.closy.external.Metric;
+import org.zabuzard.closy.external.NearestNeighborComputation;
 
 import java.util.*;
 import java.util.stream.Collectors;

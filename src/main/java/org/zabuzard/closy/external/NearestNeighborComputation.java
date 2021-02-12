@@ -1,4 +1,4 @@
-package de.zabuza.closy.external;
+package org.zabuzard.closy.external;
 
 import java.util.Collection;
 import java.util.Optional;
