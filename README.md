@@ -1,5 +1,9 @@
 # Closy
-[![maven-central](https://img.shields.io/maven-central/v/io.github.zabuzard.closy/closy)](https://img.shields.io/maven-central/v/io.github.zabuzard.closy/closy) [![javadoc](https://javadoc.io/badge2/io.github.zabuzard.closy/closy/javadoc.svg?style=flat)](https://javadoc.io/doc/io.github.zabuzard.closy/closy) [![Java](https://img.shields.io/badge/Java-9%2B-ff696c)](https://img.shields.io/badge/Java-9%2B-ff696c) [![license](https://img.shields.io/github/license/Zabuzard/Closy)](https://img.shields.io/github/license/Zabuzard/Closy) 
+[![codefactor](https://img.shields.io/codefactor/grade/github/Zabuzard/Closy)](https://www.codefactor.io/repository/github/zabuzard/closy)
+[![maven-central](https://img.shields.io/maven-central/v/io.github.zabuzard.closy/closy)](https://search.maven.org/search?q=g:io.github.zabuzard.closy)
+[![javadoc](https://javadoc.io/badge2/io.github.zabuzard.closy/closy/javadoc.svg?style=flat&color=AA82FF)](https://javadoc.io/doc/io.github.zabuzard.closy/closy)
+![Java](https://img.shields.io/badge/Java-9%2B-ff696c)
+[![license](https://img.shields.io/github/license/Zabuzard/Closy)](https://github.com/Zabuzard/Closy/blob/master/LICENSE)
 
 Closy is a simple library for efficient **nearest neighbor computations**. It is designed generic and can be used
 with **any class** that defines a [metric](https://en.wikipedia.org/wiki/Metric_(mathematics)).
